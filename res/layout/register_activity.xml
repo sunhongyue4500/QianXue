@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/c_ff2f2f2f"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/content_description"
+            android:paddingTop="10dip"
+            android:src="@drawable/mylogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0.29" >
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/login_input_drw"
+            android:hint="请输入用户名"
+            android:textColor="@color/c_ffffffff"
+            android:textColorHint="@color/c_ff949494"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_username"
+            android:layout_alignRight="@+id/register_username"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_input_drw"
+            android:hint="@string/enter_registering_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/c_ffffffff"
+            android:textColorHint="@color/c_ff949494"
+            android:textSize="15sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/register_pwd_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_username"
+            android:layout_alignRight="@+id/register_username"
+            android:layout_below="@+id/register_pwd"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_input_drw"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:textColor="@color/c_ffffffff"
+            android:textColorHint="@color/c_ff949494"
+            android:textSize="15sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/register_username"
+            android:layout_alignRight="@+id/register_username"
+            android:layout_below="@+id/register_pwd_again"
+            android:layout_marginTop="26dp"
+            android:text="注册" />
+    </RelativeLayout>
+
+</LinearLayout>
